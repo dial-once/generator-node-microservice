@@ -50,5 +50,8 @@ module.exports = yeoman.generators.Base.extend({
 
   install: function () {
     this.npmInstall();
+    this.log(yosay(
+      'Do not forget to copy the super-awesome .env.tpl file to .env and update the vars!'
+    ));
   }
 });
