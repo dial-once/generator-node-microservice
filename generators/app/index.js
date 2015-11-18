@@ -32,16 +32,6 @@ module.exports = yeoman.generators.Base.extend({
       name    : 'git',
       message : 'Github URL',
       default : gitconfig['remote "origin"'].url
-    }, {
-      type    : 'confirm',
-      name    : 'amqp',
-      message : 'Does the microservice uses AMQP ?',
-      default : true
-    },{
-      type    : 'confirm',
-      name    : 'mongodb',
-      message : 'Does the microservice uses MongoDB ?',
-      default : true
     }];
 
     this.prompt(prompts, function (props) {
