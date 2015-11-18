@@ -1,6 +1,6 @@
 {
   "name": "generator-node-microservice",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Yeoman generator to generate a Node microservice around an AMQP broker",
   "homepage": "https://github.com/dial-once/generator-node-microservice",
   "author": {
