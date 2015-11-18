@@ -1,0 +1,30 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint && jasmine",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= git %>"
+  },
+  "keywords": [],
+  "author": "Dial Once",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "<%= git %>/issues"
+  },
+  "homepage": "<%= git %>#readme",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "mongodb": "^2.0.47",
+    "rabbitrpc": "^1.0.11",
+    "winston": "^2.1.0"
+  },
+  "devDependencies": {
+
+  }
+}

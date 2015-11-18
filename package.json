@@ -1,0 +1,26 @@
+{
+  "name": "generator-node-microservice",
+  "version": "0.0.0",
+  "description": "A Yeoman generator to generate a Node microservice around an AMQP broker",
+  "homepage": "https://github.com/dial-once/generator-node-microservice",
+  "author": {
+    "name": "Dial Once",
+    "email": "github@dial-once.com",
+    "url": "https://dial-once.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "ini": "^1.3.4",
+    "yeoman-generator": "^0.21.1"
+  },
+  "devDependencies": {},
+  "repository": "git@github.com:dial-once/generator-node-microservice.git",
+  "scripts": {},
+  "license": "Apache-2.0"
+}
