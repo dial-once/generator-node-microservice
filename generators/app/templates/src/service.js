@@ -8,6 +8,7 @@ var mongodb = require('./modules/mongodb'),
 
 module.exports = mongodb
 .connect()
+.catch(process.exit)
 .then(amqp.consumer.connect)
 .then(function(){
   //add your queues here, example:

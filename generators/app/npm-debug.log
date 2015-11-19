@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/koren/.nvm/versions/node/v0.12.7/bin/node',
+1 verbose cli   '/home/koren/.nvm/versions/node/v0.12.7/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 info preversion generator-node-microservice@0.0.2
+5 info git [ 'status', '--porcelain' ]
+6 verbose version.write data { name: 'generator-node-microservice',
+6 verbose version.write   version: '0.0.2',
+6 verbose version.write   description: 'A Yeoman generator to generate a Node microservice around an AMQP broker',
+6 verbose version.write   homepage: 'https://github.com/dial-once/generator-node-microservice',
+6 verbose version.write   author:
+6 verbose version.write    { name: 'Dial Once',
+6 verbose version.write      email: 'github@dial-once.com',
+6 verbose version.write      url: 'https://dial-once.com' },
+6 verbose version.write   files: [ 'generators' ],
+6 verbose version.write   main: 'generators/index.js',
+6 verbose version.write   keywords: [ 'yeoman-generator' ],
+6 verbose version.write   dependencies: { ini: '^1.3.4', 'yeoman-generator': '^0.21.1' },
+6 verbose version.write   devDependencies: {},
+6 verbose version.write   repository: 'git@github.com:dial-once/generator-node-microservice.git',
+6 verbose version.write   scripts: {},
+6 verbose version.write   license: 'Apache-2.0' } to package.json
+7 info git [ 'add', 'package.json' ]
+8 verbose stack Error: Command failed: git add package.json
+8 verbose stack fatal: pathspec 'package.json' did not match any files
+8 verbose stack
+8 verbose stack     at ChildProcess.exithandler (child_process.js:751:12)
+8 verbose stack     at ChildProcess.emit (events.js:110:17)
+8 verbose stack     at maybeClose (child_process.js:1015:16)
+8 verbose stack     at Socket.<anonymous> (child_process.js:1183:11)
+8 verbose stack     at Socket.emit (events.js:107:17)
+8 verbose stack     at Pipe.close (net.js:485:12)
+9 verbose cwd /home/koren/dev/dialonce/generator-node-microservice/generators/app
+10 error Linux 4.2.5-1-ARCH
+11 error argv "/home/koren/.nvm/versions/node/v0.12.7/bin/node" "/home/koren/.nvm/versions/node/v0.12.7/bin/npm" "version" "patch"
+12 error node v0.12.7
+13 error npm  v2.11.3
+14 error code 128
+15 error Command failed: git add package.json
+15 error fatal: pathspec 'package.json' did not match any files
+16 error If you need help, you may report this error at:
+16 error     <https://github.com/npm/npm/issues>
+17 verbose exit [ 1, true ]
