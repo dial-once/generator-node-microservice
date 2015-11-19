@@ -45,6 +45,10 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath(),
       this.destinationPath()
     );
+    this.fs.copy(
+      this.templatePath('.*'),
+      this.destinationRoot()
+    );
     this.template('package.json', 'package.json', this.props);
   },
 

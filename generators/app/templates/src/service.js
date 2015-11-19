@@ -6,17 +6,14 @@ var mongodb = require('./modules/mongodb'),
   amqp = require('rabbitrpc')(),
   winston = require('winston');
 
-mongodb
+module.exports = mongodb
 .connect()
 .then(amqp.consumer.connect)
 .then(function(){
   //add your queues here, example:
   //amqp.consumer.createQueue('analytics:events:connect', require('./events/connect'));
 })
-.catch(function(err){
-  winston.error(err);
-  throw err;
-});
+.catch(winston.error);
 
 /**
  * Called when the program received a SIGINT/SIGTERM, gracefully shuts down things
