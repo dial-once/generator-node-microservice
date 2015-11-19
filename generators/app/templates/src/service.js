@@ -12,7 +12,7 @@ module.exports = mongodb
 .then(amqp.consumer.connect)
 .then(function(){
   //add your queues here, example:
-  //amqp.consumer.createQueue('analytics:events:connect', require('./events/connect'));
+  amqp.consumer.createQueue('sample:queue', require('./queues/sample'));
 })
 .catch(winston.error);
 
