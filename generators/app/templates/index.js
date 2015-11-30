@@ -12,7 +12,7 @@ var http = require('http');
  * @param  {object} res - Express res object type, used to send back the response
  * @return {void} nothing
  */
-require('./src/service').then(function(){
+module.exports = require('./src/service').then(function(){
   http.createServer(function (req, res) {  
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end();
