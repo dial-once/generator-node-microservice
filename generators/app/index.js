@@ -1,9 +1,10 @@
 'use strict';
+
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var fs = require('fs'),
-  ini = require('ini');
+var fs = require('fs');
+var ini = require('ini');
 
 module.exports = yeoman.generators.Base.extend({
   prompting: function () {
@@ -49,6 +50,7 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath('.*'),
       this.destinationRoot()
     );
+    this.template('index.js', 'index.js', this.props);
     this.template('package.json', 'package.json', this.props);
   },
 
