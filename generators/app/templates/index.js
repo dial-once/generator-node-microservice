@@ -1,5 +1,5 @@
 /** service module. Starts listeners on the AMQP Broker to receive and answer to Analytics messages.
- * @module service-
+ * @module <%= name %>
  */
 require('dotenv').load();
 require('./src/boot/winston');
@@ -13,7 +13,7 @@ var http = require('http');
  * @return {void} nothing
  */
 module.exports = require('./src/service').then(function(){
-  http.createServer(function (req, res) {  
+  http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end();
   }).listen(process.env.PORT || 3000);
